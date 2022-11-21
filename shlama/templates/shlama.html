@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shlama_Project</title>  
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/all.min.css" type="text/css">
+    <script src="{% static 'js/all.min.js' %}"></script>
+  <!-- <link href="{% static 'css/boostrap.min.css' %}" rel="stylesheet"> -->
+  <link href="{% static 'css/shlama.css' %}" rel="stylesheet">
+
+</head>
+<body>
+   
+<div class="container-fluid ">
+<!-- start 1st nav bar -->
+<nav class="navbar navbar-expand-sm  nav-paddng nav-bordr" id="nav1 ">
+    <div class="d-flex flex-grow-1  mbl-pddng nav-bordr">
+        
+       <a class="brand-logo " href=""><img src="{% static 'images/logo_03.jpg' %}" alt="" class="size-brnd" ></a>
+    </div>
+   
+    <div class="navbar-collapse  flex-grow-0 order-last" id="myNavbar">
+    <ul class="navbar-nav sidecontent">
+    <li class="nav-item pe-4 justify-content-center mbl-pddng no-pddng nav-bordr">
+        <i class="fa-solid fa-phone "></i> (647)695-0008
+    </li>
+    <li class="nav-item pe-5  mbl-pddng no-pddng">
+        <button type="button" class="btn get-in-touch button-block " >EMAIL NOW</button> 
+    </li>
+</ul>   
+ </nav>
+<!-- end 1st nav bar -->
+<!-- start 1st nav bar -->
+<nav class="navbar navbar-expand-sm mobile-nav nav-paddng " id="nav1 ">
+    <div class="d-flex flex-grow-1">
+       <button type="button" class="btn ps-0" onclick="openNav()">
+      
+        </button>
+      
+       <ul class="navbar-nav contents fw-bold">
+        <li class="nav-item pe-4">
+            Home
+        </li>
+        <li class="nav-item pe-5">
+            About
+        </li>
+        <li class="nav-item pe-5">
+            Projects
+        </li>
+        <li class="nav-item pe-5">
+            Services
+        </li>
+        <li class="nav-item pe-5">
+            Gallery
+        </li>
+        <li class="nav-item pe-5">
+            Testimonials
+        </li>
+        <li class="nav-item pe-5">
+            <a href="{% url 'contact' %}"><span class="contents ">Contact</span> </a> 
+        </li>
+    </ul>   
+    </div>
+    
+    
+ </nav>
+<!-- end 1st nav bar -->
+
+<div class="row desktop-bnner">
+    <div class="col-md-12 img1 p-0">
+        <img src="{% static 'images/Desktopbanner.jpg' %}" alt="Snow" class="img-fluid img5 desktop-bnner">
+        <!-- <img src="{% static 'images/Mobilebanner.jpg' %}" alt="Snow" class="img-fluid img5 "> -->
+
+        <div class="centered "> 
+            <div class="row text1">
+                <div class="col-md-12 p-0">
+                    <strong> Neque Porro <br> </strong>
+                </div>
+            </div>
+            <div class="row text1">
+                <div class="col-md-10 p-0">
+                    <strong>Quisquam </strong>
+                </div>
+            </div>
+            <div class="row text2">
+                <div class="col-md-11 ps-0">
+                    est qui dolorem ipsum...
+                </div>
+            </div>
+            <div class="row text2">
+                <div class="col-sm-8 d-grid pt-3">
+                    <button type="button" class="btn get-in-touch button-block" >GET IN TOUCH</button> 
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mobile-bnner">
+    <div class="col-12 img1 p-0">
+        <img src="{% static 'images/Mobilebanner.jpg' %}" alt="Snow" class="img-fluid ">
+    </div>  
+</div>  
+<div class="row text-center moble-view-text1 mobile-bnner" >
+    <div class="col-12">
+        <div class="row text1 ">
+            <div class="col-12 ">
+                <strong> Neque Porro Quisquam </strong>
+            </div>
+        </div>
+        <div class="row text2">
+            <div class="col-11 ps-5">
+                est qui dolorem ipsum...
+            </div>
+        </div>
+        <div class="row text2 butn-pddng pb-4">
+            <div class="col-6 d-grid pt-3">
+                <button type="button" class="btn get-in-touch button-block" >GET IN TOUCH</button> 
+             </div>
+        </div>
+    </div>
+</div>
+            
+     
+    
+
+
+
+ <!-- start img2 -->
+ <div class="row img2-paddng mobile-view">
+    <div class="col-md-1"></div>
+    <div class="col-md-5 ">
+        <img src="{% static 'images/Blurb.jpg' %}" alt="" class="img-fluid img5">
+    </div>
+    <div class=" col-sm-6 col-md-5 lorem-paddng postin-cntr">
+           <span class="img2-text1 ">LOREM IPSUM</span> <br>
+            <p class="img2-text2">Lorem Ipsum is simply dummy text</p> 
+            <p class="img2-text3">Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                   Lorem ipsum has been the industry's standard dummy text never since the 
+                                   1500s, When an unknow printer took a galley of type and scrambled it to.
+                                   make a type specimen book. it has survived not only five centuries, but also
+                                   the leaf into electronic typesetting, remaining essentially unchaanged. </p>
+            <button type="button" class="btn get-in-touch button-block " >READ MORE</button> 
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<!-- end img2 -->
+
+
+    <!-- start img3 -->
+    <div class="row img3-back-clr img2-paddng mobile-img1" >
+        <div class="col-md-1 ">
+        </div>
+        <div class=" col-md-5 text-center">
+             <img src="{% static 'images/Service1.jpg' %}" alt="" class="img-fluid pb-3 img5">
+             <span class="img3-lft-text1"><strong> HARDWOOD FLOORING</strong></span><br>
+             <p class="img3-lft-text2" >We specialize in hardwood floor installation; these types of floors are long-lasting and easy to maintain </p>
+        </div> <br>
+        <div class=" col-md-5 text-center">
+            <img src="{% static 'images/Service2.jpg' %}" alt="" class="img-fluid pb-3 img5">
+            <span class="img3-lft-text1"><strong> LAMINATE FLOORING</strong></span><br>
+             <p class="img3-lft-text2">We are not only certified and insured in hardwood floor installation, but we also ensure quality materials.</p>
+        </div>
+        <div class=" col-md-1">
+        </div>
+    </div>
+    <!-- end img3 -->
+
+<!-- start footer -->
+    <div class="row border-bottom  futer-bck-clr">
+        <div class="col-md-1 "></div>
+        <div class="col-md-10 ">
+            <div class="row">
+                <div class="col-md-7  loction  ">
+                    <div class="row postin-cntr">
+                        <div class="col-md-1 pb-0  ">
+                            <i class="fa-solid fa-location-dot loctin-sze "></i> 
+                        </div>
+                        <span class="col-12 col-md-10 pt-0 img3-lft-text2 ">
+                            00 Vaughan Road, 3rd floor, Torornto, ON 123 456, Canada
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-3  postin-cntr mobile-btn-pddng">
+                <button type="button" class="btn mailng-list button-block" >Join Our Mailing List </button> 
+                </div>
+                <div class="col-md-2  icn-size ">
+                    <div class="row loction ">
+                        <div class="col-md-2 col-2 me-3">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </div>
+                        <div class="col-md-2 col-2 me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="col-md-2 col-2">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 "></div>
+    </div>
+
+    <div class="row pt-3 futer-bck-clr">
+        <div class="col-md-1 col-1"></div>
+        <div class="col-md-10 col-10">
+            <div class="row loction postin-cntr">
+                <div class="col-md-7 col-12 img3-lft-text2">
+                    Copyright <i class="fa-regular fa-copyright copyright"></i> 2021- Lorem Ispum. Powered By Webware.io
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <div class="row mobile-dis">
+                        Powered By Webware.io
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-1"></div>
+    </div>
+
+<!-- end footer -->
+</div>
+   
+
+
+
+</body>
+</html>
+
+
